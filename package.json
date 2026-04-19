@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {},
   "devDependencies": {
+    "@biomejs/biome": "2.4.12",
     "typescript": "^6.0.3",
     "vite": "^8.0.8"
   }
