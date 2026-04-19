@@ -2,6 +2,8 @@
   "name": "fabula-alterius",
   "type": "module",
   "private": true,
-  "scripts": {
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "^6.0.3"
   }
 }
