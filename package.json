@@ -10,7 +10,8 @@
     "test:e2e": "playwright test",
     "lint": "biome lint",
     "format": "biome format --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "typecheck": "tsc"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.12",
