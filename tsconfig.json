@@ -11,8 +11,12 @@
     "lib": ["ESNext", "DOM"],
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
+    "jsx": "react-jsx",
+    "allowArbitraryExtensions": true,
+    "types": ["vite/client"],
 
     "noEmit": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["src", "tests"]
 }
