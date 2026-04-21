@@ -1,0 +1,46 @@
+{
+  "name": "fabula-alterius",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test:unit": "vitest run --project unit-test",
+    "test:component": "vitest run --project component-test",
+    "test:e2e": "playwright test",
+    "lint": "biome lint",
+    "format": "biome format --write",
+    "prepare": "husky",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.12",
+    "@playwright/test": "^1.59.1",
+    "@tailwindcss/vite": "^4.2.2",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "husky": "^9.1.7",
+    "jsdom": "^29.0.2",
+    "lint-staged": "^16.4.0",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.8",
+    "vitest": "^4.1.4"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-hook-form": "^7.72.1",
+    "zod": "^4.3.6",
+    "zustand": "^5.0.12"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,css,html,json}": [
+      "npm run format"
+    ]
+  }
+}
