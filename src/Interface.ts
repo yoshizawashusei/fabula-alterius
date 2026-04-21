@@ -20,3 +20,21 @@ type BodyPart =
   | 'RightLeg'
   | 'LeftFoot'
   | 'RightFoot';
+
+type StatKey =
+  | 'HP'
+  | 'SP'
+  | 'MP'
+  | 'STR'
+  | 'DEX'
+  | 'AGI'
+  | 'INT'
+  | 'MAG'
+  | 'POW'
+  | 'VIT'
+  | 'SNS'
+  | 'LUK'
+  | 'APP';
+
+type Stat = Record<StatKey, Number>;
+type StatBonus = Partial<Stat>;
