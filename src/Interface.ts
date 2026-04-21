@@ -36,5 +36,6 @@ type StatKey =
   | 'LUK'
   | 'APP';
 
+type Item = WithLore<TOPLevelData> & { Wealth: Number };
 type Stat = Record<StatKey, Number>;
 type StatBonus = Partial<Stat>;
